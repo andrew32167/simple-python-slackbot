@@ -32,8 +32,8 @@ def main():
 
     :return:
     '''
-    bot = Bot(bot_token=os.environ.get('CLUSTER_BOT_TOKEN'),
-              bot_id=os.environ.get('CLUSTER_BOT_ID'),
+    bot = Bot(bot_token='YOUR_BOT_TOKEN_HERE',
+              bot_id='YOUR_BOT_ID_HERE',
               command_handler=MyHandler)
 
     chnl = 'D39TY1ZV2'
