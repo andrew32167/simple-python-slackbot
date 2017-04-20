@@ -12,11 +12,11 @@ pip install -r simple-python-slackbot/requirements.txt
 ```
 # Usage
 Just import Bot class and pass `token` and `bot_id` to constructor and you're ready to go
-```
+```python
 from Bot import Bot
     
-bot = Bot(bot_token='YOUR_BOT_TOKEN',
-          bot_id='YOUR_BOT_ID')
-          
+bot = Bot(bot_token='YOUR_BOT_TOKEN', bot_id='YOUR_BOT_ID')
 
+chnl = 'channel_id'
+msg = bot.post_message(chnl, 'Look who is alive!!!')
 ```
